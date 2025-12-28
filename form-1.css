@@ -1,0 +1,64 @@
+body{
+    font-family: sans-serif;
+    background-color: #f7f0e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+/*Define a custome property for the primary color*/
+:root{
+    --primary-color: #6a5acd;
+}
+.form-container{
+    background-color: #e0d9f0;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+}
+.input-group{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.icon{
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.input-group input{
+    width: 330px;
+    border: none;
+    border-left: 1px solid black;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 16px;
+    flex-grow: 1;
+}
+.input-group input::placeholder{
+    color: #a0a0a0;
+}
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: #5b46b1;
+}
+
